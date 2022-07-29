@@ -6,6 +6,10 @@ app.get("/",(req,res)=>{
     res.end();
 });
 
+app.get("/hello",(req,res)=>{
+    res.status(200).send("Hello Ashish");
+    res.end();
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT,console.log(
